@@ -6,7 +6,7 @@
 #include <time.h>
 #include "appdev.h"
 #include <curl/curl.h>
-
+// change somthing
 int main(void) {
 	rock r;
 	srand(time(NULL));
@@ -29,7 +29,7 @@ void send_data(rock r) {
 
 	curl = curl_easy_init();
 	if (curl) {
-		curl_easy_setopt(curl, CURLOPT_URL, "http://www.cc.puv.fi/~e2102995/appdev.php");
+		curl_easy_setopt(curl, CURLOPT_URL, "http://www.cc.puv.fi/~e2101075/appdev.php");
 		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, poststr);
 
 		/* Perform the request, res will get the return code */
